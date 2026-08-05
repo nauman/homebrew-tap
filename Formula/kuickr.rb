@@ -5,21 +5,21 @@
 class Kuickr < Formula
   desc "kuickr CLI — host your repo's docs on kuickr.co from the terminal"
   homepage "https://kuickr.co/cli"
-  version "0.27.0"
+  version "0.28.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nauman/kuickr-cli-releases/releases/download/v0.27.0/kuickr_Darwin_x86_64.tar.gz"
-      sha256 "7e0cfec8ce1650252d7a96823c7216aa48552205387b37b5502ed40cdd98e4c5"
+      url "https://github.com/nauman/kuickr-cli-releases/releases/download/v0.28.0/kuickr_Darwin_x86_64.tar.gz"
+      sha256 "e6c629c728a631a6ea635633c1b2ffa6f81edae73cffba0baa799b943c4ac95a"
 
       define_method(:install) do
         bin.install "kuickr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nauman/kuickr-cli-releases/releases/download/v0.27.0/kuickr_Darwin_arm64.tar.gz"
-      sha256 "727eba441dcedf9c32f81663e6eb325afb8de6e9aeac58165faccd1099899472"
+      url "https://github.com/nauman/kuickr-cli-releases/releases/download/v0.28.0/kuickr_Darwin_arm64.tar.gz"
+      sha256 "c903723b4048debcfccd2b6e1c4bb505158b38dfe028d8f08cee3839a0d4e004"
 
       define_method(:install) do
         bin.install "kuickr"
@@ -29,15 +29,15 @@ class Kuickr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nauman/kuickr-cli-releases/releases/download/v0.27.0/kuickr_Linux_x86_64.tar.gz"
-      sha256 "a5031d28e97639e39df0819e77d3db5966fdbd18fac8c774c17c94cc72fb3eec"
+      url "https://github.com/nauman/kuickr-cli-releases/releases/download/v0.28.0/kuickr_Linux_x86_64.tar.gz"
+      sha256 "c59b66592f466f3c18422ff09157e6dd028f558bb911fe6d5650d66b745c4851"
       define_method(:install) do
         bin.install "kuickr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nauman/kuickr-cli-releases/releases/download/v0.27.0/kuickr_Linux_arm64.tar.gz"
-      sha256 "ae4d2b30da9a96a05bedcb2f1cade105e6707b203081c0160afcee890a886251"
+      url "https://github.com/nauman/kuickr-cli-releases/releases/download/v0.28.0/kuickr_Linux_arm64.tar.gz"
+      sha256 "f94d02aa4a5edc45537e623dd0d044201c673bd6b52f5a04862f999cb435677c"
       define_method(:install) do
         bin.install "kuickr"
       end
