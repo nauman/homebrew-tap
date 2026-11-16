@@ -5,21 +5,21 @@
 class Baari < Formula
   desc "baari — cross-repo agent coordination CLI"
   homepage "https://nauman.github.io/baari/"
-  version "0.27.1"
+  version "0.27.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nauman/baari/releases/download/v0.27.1/baari_Darwin_x86_64.tar.gz"
-      sha256 "c56893b38049ac0f20bad6afed7fadd4a6832ffee123b5f702406002ac49fbe9"
+      url "https://github.com/nauman/baari/releases/download/v0.27.2/baari_Darwin_x86_64.tar.gz"
+      sha256 "cee3f782e746d471776457b18f9450a2382d12ac30f0bab61731d1729d7db931"
 
       define_method(:install) do
         bin.install "baari"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nauman/baari/releases/download/v0.27.1/baari_Darwin_arm64.tar.gz"
-      sha256 "831eca362611c57bec53d7929690a16bf6aaf577b262edce58942a481a58259d"
+      url "https://github.com/nauman/baari/releases/download/v0.27.2/baari_Darwin_arm64.tar.gz"
+      sha256 "1e2518cf4cf0b6298e653b92c673185f34c6a4ce10c3cf26c77f0a80a9ed8c95"
 
       define_method(:install) do
         bin.install "baari"
@@ -29,15 +29,15 @@ class Baari < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nauman/baari/releases/download/v0.27.1/baari_Linux_x86_64.tar.gz"
-      sha256 "1bbaa3cdaf2122bceacf6c3350e6bc4f50b9c1716b70fe0a3f3f555062d08430"
+      url "https://github.com/nauman/baari/releases/download/v0.27.2/baari_Linux_x86_64.tar.gz"
+      sha256 "adc963fa2520efab5384b8c7dbb6e57715868948d91e0711888c2b1969d035bb"
       define_method(:install) do
         bin.install "baari"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nauman/baari/releases/download/v0.27.1/baari_Linux_arm64.tar.gz"
-      sha256 "674592698a01be9343a92435570735b3bfbde343a7b8e122c84874cf0e42e6d6"
+      url "https://github.com/nauman/baari/releases/download/v0.27.2/baari_Linux_arm64.tar.gz"
+      sha256 "ccc61e964170d9ecc8d1b95bd337377fbda3a938e067c2367151e859abf1e941"
       define_method(:install) do
         bin.install "baari"
       end
